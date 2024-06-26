@@ -8,11 +8,11 @@ btn.addEventListener("click", function () {
     let km = document.getElementById("km").value;
     let age = document.getElementById("age").value;
 
-// DICHIARO VARIABILI COSTO PER KM PREZZO
+// DICHIARO VARIABILI COSTO PER KM PREZZO //
     let cost_km = 0.21;
     let price = cost_km * km;
     let reduction = 0;
-// INSERISCO CONDIZIONE IF e ELSE IF
+// INSERISCO CONDIZIONE IF e ELSE IF //
     if (age == "underage") {
       reduction = 20 / 100;
     }
@@ -20,8 +20,13 @@ btn.addEventListener("click", function () {
       reduction = 40 / 100;
     }
 
+// DICHIARO LE VARIABILI E GLI ASSEGNO VALORE UGUALE A: //
     let discount = (price * reduction).toFixed(2);
     let reduced_price = (price - discount).toFixed(2);
+
+// INSERISCO I PRIMI OUTPUT //
+    document.getElementById("passenger").innerHTML = `${name_surname}`
+    document.getElementById("cost").innerHTML = `${reduced_price}€`
 }
 )
 
