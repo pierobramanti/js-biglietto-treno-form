@@ -11,4 +11,12 @@ btn.addEventListener("click", function () {
 // DICHIARO VARIABILI COSTO PER KM PREZZO
     let cost_km = 0.21;
     let price = cost_km * km;
+    let reduction = 0;
+// INSERISCO CONDIZIONE IF e ELSE IF
+    if (age === "underage") {
+      reduction = 20 / 100;
+    }
+    else if (age === "over_65") {
+      reduction = 40 / 100;
+    }
 }
