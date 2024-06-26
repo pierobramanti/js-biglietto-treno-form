@@ -11,7 +11,7 @@
   <header>
     <div class="container">
         <div class="row">
-            <div class="col-12">
+            <div class="col-12 my-5">
                 <div class="content text-center">
                     <h1> CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
                 </div>
@@ -22,23 +22,23 @@
   <main>
     <div class="container">
         <div class="row">
-            <div class="col-12">
-                <div class="row">
-                    <div class="col-4">
+            <div class="col-12 card">
+                <div class="row justify-content-center">
+                    <div class="col-3 my-2">
                         <div class="d-flex flex-column align-items-center">
                             <label class="form-label" for="nomeEcognome">Nome Cognome</label>
                             <input class="form-control" type="text" id="nomeEcognome" name="nomeEcognome"
                             placeholder="inserisci nome e cognome">
                         </div>
                     </div>
-                    <div class="col-4">
+                    <div class="col-3 my-2">
                         <div class="d-flex flex-column align-items-center">
                             <label class="form-label" for="km">Km da percorrere</label>
                             <input class="form-control" type="number" id="km" name="km"
                             placeholder="Km da percorrere (inserisci cifra numerica)">
                         </div>
                     </div>
-                    <div class="col-4">
+                    <div class="col-3 my-2">
                         <div class="d-flex flex-column align-items-center">
                             <label class="form-label" for="age">Fascia d'età</label>
                             <select class="form-select" name="age" id="age">
@@ -50,27 +50,39 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12">
+                <div class="col-12 mt-5 mb-5">
                     <div class="content text-center">
-                        <h2>Il tuo biglietto</h2>
+                        <div class="d-flex justify-content-center">
+                            <button class="me-2 px-2 rounded" id="button">Genera</button>
+                            <button class="px-2 rounded" id="reset">Reset</button>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col-12">
-                <div class="content text-center">
+            <div class="col-12 my-5">
+                <div class="text-center">
+                    <h2>IL TUO BIGLIETTO</h2>
+                </div>
+            </div>
+            <div class="col-12 border py-5 px-5">
+                <div class="content">
                     <h5>Dettagli passeggero/a</h3>
                     <div class="row">
-                        <div class="col-3">
-
+                        <div class="col-3 border">
+                            <h6>Nome passeggero/a</h6>
+                            <p id="passenger" class="text-uppercase fw-bolder"></p>
                         </div>
-                        <div class="col-3">
-
+                        <div class="col-3 border-top border-bottom">
+                            <h6>Offerta</h6>
+                            <p id="typeOfTicket"></p>
                         </div>
-                        <div class="col-3">
-
+                        <div class="col-3 border-top border-bottom">
+                            <h6>Sconto applicato</h6>
+                            <p id="typeOfDiscount"></p>
                         </div>
-                        <div class="col-3">
-                            
+                        <div class="col-3 border-top border-bottom">
+                            <h6>Costo biglietto</h6>
+                            <p id="cost"></p>
                         </div>
                     </div>
                 </div>
