@@ -7,4 +7,8 @@ btn.addEventListener("click", function () {
     let name_surname= document.getElementById("nomeEcognome").value;
     let km = document.getElementById("km").value;
     let age = document.getElementById("age").value;
+
+// DICHIARO VARIABILI COSTO PER KM PREZZO
+    let cost_km = 0.21;
+    let price = cost_km * km;
 }
