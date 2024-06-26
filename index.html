@@ -7,13 +7,13 @@
     <link rel="stylesheet" href="./css/style.css">
     <title>Il tuo biiglietto del treno</title>
 </head>
-<body>
+<body class="bg-amaranto">
   <header>
     <div class="container">
         <div class="row">
             <div class="col-12 my-5">
                 <div class="content text-center">
-                    <h1> CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
+                    <h1 class="text-white"> CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
                 </div>
             </div>
         </div>
@@ -26,21 +26,21 @@
                 <div class="row justify-content-center">
                     <div class="col-3 my-2">
                         <div class="d-flex flex-column align-items-center">
-                            <label class="form-label" for="nomeEcognome">Nome Cognome</label>
+                            <label class="form-label color-amaranto" for="nomeEcognome">Nome Cognome</label>
                             <input class="form-control" type="text" id="nomeEcognome" name="nomeEcognome"
                             placeholder="inserisci nome e cognome">
                         </div>
                     </div>
                     <div class="col-3 my-2">
                         <div class="d-flex flex-column align-items-center">
-                            <label class="form-label" for="km">Km da percorrere</label>
+                            <label class="form-label color-amaranto" for="km">Km da percorrere</label>
                             <input class="form-control" type="number" id="km" name="km"
                             placeholder="Km da percorrere (inserisci cifra numerica)">
                         </div>
                     </div>
                     <div class="col-3 my-2">
                         <div class="d-flex flex-column align-items-center">
-                            <label class="form-label" for="age">Fascia d'età</label>
+                            <label class="form-label color-amaranto" for="age">Fascia d'età</label>
                             <select class="form-select" name="age" id="age">
                                 <option value=""></option>
                                 <option value="underage">Minorenne</option>
@@ -53,34 +53,34 @@
                 <div class="col-12 mt-5 mb-5">
                     <div class="content text-center">
                         <div class="d-flex justify-content-center">
-                            <button class="me-2 px-2 rounded" id="button">Genera</button>
-                            <button class="px-2 rounded" id="reset">Reset</button>
+                            <button class="me-2 px-2 my-border color-amaranto" id="button">Genera</button>
+                            <button class="px-2 my-border color-amaranto" id="reset">Reset</button>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="col-12 my-5">
                 <div class="text-center">
-                    <h2>IL TUO BIGLIETTO</h2>
+                    <h2 class="text-white">IL TUO BIGLIETTO</h2>
                 </div>
             </div>
-            <div class="col-12 border py-5 px-5">
+            <div class="col-12 border py-5 px-5 bg-white">
                 <div class="content">
                     <h5>Dettagli passeggero/a</h3>
                     <div class="row">
-                        <div class="col-3 border">
+                        <div class="col-3 border py-5 bg-grey">
                             <h6>Nome passeggero/a</h6>
                             <p id="passenger" class="text-uppercase fw-bolder"></p>
                         </div>
-                        <div class="col-3 border-top border-bottom">
+                        <div class="col-3 border-top border-bottom py-5">
                             <h6>Offerta</h6>
                             <p id="type_ticket"></p>
                         </div>
-                        <div class="col-3 border-top border-bottom">
-                            <h6>Sconto applicato</h6>
+                        <div class="col-3 border-top border-bottom py-5">
+                            <h6>Percentuale di sconto</h6>
                             <p id="type_discount"></p>
                         </div>
-                        <div class="col-3 border-top border-bottom">
+                        <div class="col-3 border-top border-bottom py-5">
                             <h6>Costo biglietto</h6>
                             <p id="cost"></p>
                         </div>

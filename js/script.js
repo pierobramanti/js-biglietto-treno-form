@@ -30,17 +30,17 @@ btn.addEventListener("click", function () {
 
 // INSERISCO I SECONDI OUTPUT CON  TRE CONDIZIONI //
     if (age == "underage") {
-        document.getElementById("type_ticket").innerHTML = `Young ticket`
+        document.getElementById("type_ticket").innerHTML = `Underage`
         document.getElementById("type_discount").innerHTML = `20%`
     } 
     
     else if(age == "over_65") {
-        document.getElementById("type_ticket").innerHTML = `Senior ticket`
+        document.getElementById("type_ticket").innerHTML = `Senior`
         document.getElementById("type_discount").innerHTML = `40%`
     } 
 
     else {
-        document.getElementById("type_ticket").innerHTML = `Standard ticket`
+        document.getElementById("type_ticket").innerHTML = `Standard `
         document.getElementById("type_discount").innerHTML = `Nessuno`
     }
 });
